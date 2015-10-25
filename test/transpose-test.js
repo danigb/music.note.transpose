@@ -22,6 +22,15 @@ vows.describe('transpose').addBatch({
       assert.equal(transpose('C', '3m'), 'Eb')
       assert.equal(transpose('C#', '3m'), 'E')
       assert.equal(transpose('D', '3M'), 'F#')
+    },
+    'order does not matter': function () {
+      assert.equal(transpose('3m', 'C4'), transpose('C4', '3m'))
+    },
+    'transpose intervals': function () {
+      assert.equal(transpose('3M', '3M'), '5A')
+    },
+    'one must be an interval': function () {
+      assert.equal(transpose('C', 'C'), null)
     }
   },
   'partial applied': {

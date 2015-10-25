@@ -1,15 +1,16 @@
-# music.transpose
+# music.note.transpose
 
-[![Build Status](https://travis-ci.org/danigb/music.transpose.svg?branch=master)](https://travis-ci.org/danigb/music.transpose)
-[![Code Climate](https://codeclimate.com/github/danigb/music.transpose/badges/gpa.svg)](https://codeclimate.com/github/danigb/music.transpose)
+[![Build Status](https://travis-ci.org/danigb/music.note.transpose.svg?branch=master)](https://travis-ci.org/danigb/music.note.transpose)
+[![Code Climate](https://codeclimate.com/github/danigb/music.note.transpose/badges/gpa.svg)](https://codeclimate.com/github/danigb/music.note.transpose)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![npm version](https://img.shields.io/npm/v/music.transpose.svg)](https://www.npmjs.com/package/music.transpose)
-[![license](https://img.shields.io/npm/l/music.transpose.svg)](https://www.npmjs.com/package/music.transpose)
+[![npm version](https://img.shields.io/npm/v/music.note.transpose.svg)](https://www.npmjs.com/package/music.note.transpose)
+[![license](https://img.shields.io/npm/l/music.note.transpose.svg)](https://www.npmjs.com/package/music.note.transpose)
 [![music.kit](https://img.shields.io/badge/music-kit-yellow.svg)](https://github.com/danigb/music.kit)
 
 Simple and fast pitch transposition:
 
 ```js
+var transpose = require('music.note.transpose')
 transpose('E2', '2M') // => 'F#2'
 transpose('F4', '3m') // => 'Ab4'
 ```
@@ -18,16 +19,11 @@ This is part of [music.kit](https://github.com/danigb/music.kit)
 
 ## Installation
 
-Install the npm module: `npm i --save music.transpose` and use it:
-
-```js
-var transpose = require('music.transpose')
-transpose('3m', 'G') // => 'Bb'
-```
+Via npm module: `npm i --save music.note.transpose` or the [browser ready distribution file]()
 
 ## Usage
 
-#### note transposition
+#### Note transposition
 
 The simplest usage is with a note name (pitch) and interval (the order doesn't matter):
 
@@ -43,6 +39,14 @@ You can transpose pitch classes (note names without octaves), and the returned v
 ```js
 tranpose('A', '3M') // => 'C#'
 tranpose('A5', '3M') // => 'C#5'
+```
+
+#### Add intervals
+
+If you need it you can transpose an interval:
+
+```js
+transpose('3M', '3M') // => '5A'
 ```
 
 #### Transposers
@@ -71,6 +75,10 @@ This library can work with [pitches or intervals expressed as arrays](https://gi
 transpose([0, 1, 3], [2, 0, 0]) // => [3, 1, 3]
 // is the same as: transpose('C#3', '3M') => 'E#3'
 ```
+
+#### More...
+
+See [music.kit](https://github.com/danigb/music.kit)
 
 ## License
 

@@ -1,5 +1,5 @@
 var notation = require('music.notation')
-var op = require('music.operator')
+var op = require('music.pitch.operator')
 
 /**
  * Transposes a pitch by an interval
