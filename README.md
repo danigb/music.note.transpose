@@ -6,7 +6,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 [![npm version](https://img.shields.io/npm/v/music.note.transpose.svg)](https://www.npmjs.com/package/music.note.transpose)
 [![license](https://img.shields.io/npm/l/music.note.transpose.svg)](https://www.npmjs.com/package/music.note.transpose)
-[![music.kit](https://img.shields.io/badge/music-kit-yellow.svg)](https://github.com/danigb/music.kit)
+[![music.kit](https://img.shields.io/badge/music-kit-yellow.svg)](https://www.npmjs.com/package/music.kit)
 
 Simple and fast pitch transposition:
 
@@ -16,7 +16,7 @@ transpose('E2', '2M') // => 'F#2'
 transpose('F4', '3m') // => 'Ab4'
 ```
 
-This is part of [music.kit](https://github.com/danigb/music.kit)
+This is part of [music.kit](https://www.npmjs.com/package/music.kit)
 
 ## Installation
 
@@ -59,7 +59,7 @@ var major3th = transpose('3M')
 major3th('D') // => 'F#'
 ```
 
-#### Work with pitch or interval arrays
+#### Map arrays
 
 Partially applied transposers allows to work with arrays seamlessly:
 
@@ -79,7 +79,7 @@ transpose([0, 1, 3], [2, 0, 0]) // => [3, 1, 3]
 
 #### More...
 
-See [music.kit](https://github.com/danigb/music.kit)
+See [music.kit](https://www.npmjs.com/package/music.kit)
 
 ## License
 

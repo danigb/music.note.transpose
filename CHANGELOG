@@ -1,10 +1,13 @@
 CHANGELOG
 
+[0.0.3] - Can use array notation parameters
 [0.0.1] - First implementation
 
 
 DIST
+[0.0.3] 5964
 [0.0.1] 5775
 
 BENCHMARKS
+[0.0.3] 40,782 / 42,973
 [0.0.1] 42,981 / 41,623

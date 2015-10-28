@@ -1,6 +1,6 @@
 {
   "name": "music.note.transpose",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Music transposition made easy",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,10 @@
   },
   "keywords": [
     "music",
-    "music.note.transpose"
+    "note",
+    "transpose",
+    "interval",
+    "music.kit"
   ],
   "author": "danigb",
   "license": "MIT",

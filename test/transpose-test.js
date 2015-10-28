@@ -3,6 +3,10 @@ var assert = require('assert')
 var transpose = require('../')
 
 vows.describe('transpose').addBatch({
+  'use array notation': function () {
+    assert.deepEqual(transpose([2, 0], [1, 0, 0]), [3, 1])
+    assert.deepEqual(transpose([2, 0, 1, 10], [1, 0, 0]), [3, 1, 1, 10])
+  },
   'simple transposition': {
     'transpose pitches': function () {
       assert.equal(transpose('C4', '8P'), 'C5')
@@ -28,9 +32,6 @@ vows.describe('transpose').addBatch({
     },
     'transpose intervals': function () {
       assert.equal(transpose('3M', '3M'), '5A')
-    },
-    'one must be an interval': function () {
-      assert.equal(transpose('C', 'C'), null)
     }
   },
   'partial applied': {

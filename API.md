@@ -19,6 +19,7 @@
 <dd>
 <div class="description">
 <p>Transposes a pitch by an interval</p>
+<p>This function is curryfied, so you can partially applied (see example)</p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -56,7 +57,7 @@
 <li>
 <a href="https://github.com/danigb/music.note.transpose/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/danigb/music.note.transpose/blob/master/index.js#L16">lineno 16</a>
+<a href="https://github.com/danigb/music.note.transpose/blob/master/index.js#L19">lineno 19</a>
 </li>
 </ul></dd>
 </dl>
@@ -77,7 +78,8 @@ Type
 <h5>Example</h5>
 <pre class="prettyprint"><code>transpose('3m', 'C4') // => 'Eb4'
 transpose('C4', '3m') // => 'Eb4'
-tranpose([1, 0, 2], [3, -1, 0]) // => [3, 0, 2]</code></pre>
+tranpose([1, 0, 2], [3, -1, 0]) // => [3, 0, 2]
+['C', 'D', 'E'].map(transpose('3M')) // => ['E', 'F#', 'G#']</code></pre>
 </dd>
 </dl>
 </article>
